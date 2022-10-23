@@ -92,6 +92,48 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 2px solid #18d26e;
   padding-bottom: 6px;
 }
+#header h2 span:after {
+  content: "";
+  line-height: 50px;
+  animation: typeTest 2s linear infinite;
+  animation-fill-mode: forwards;
+}
+
+@keyframes typeTest {
+  from {
+    content: " ";
+  }
+  10% {
+    content: "3";
+  }
+  20% {
+    content: "3D ";
+  }
+  30% {
+    content: "3D A";
+  }
+  40% {
+    content: "3D Ar"
+  }
+  50% {
+    content: "3D Art"
+  }
+  60% {
+    content: "3D Arti"
+  }
+  70% {
+    content: "3D Artis"
+  }
+  80% {
+    content: "3D Artist"
+  }
+  90% {
+    content: "3D Artist"
+  }
+  100% {
+    content: "3D Artist"
+  }
+}
 #header img {
   padding: 0;
   margin: 0;
@@ -133,6 +175,8 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
   }
 }
+
+
 
 /* Header Top */
 #header.header-top {
@@ -835,6 +879,7 @@ section .container {
   top: 0;
   bottom: 0;
   overflow-y: auto;
+  
 }
 .portfolio-details .container {
   padding-top: 20px;
@@ -857,6 +902,14 @@ section .container {
   list-style: none;
   padding: 0;
   font-size: 15px;
+
+}
+.portfolio-details .portfolio-info ul strong{
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+  color:#15bb62;
+
 }
 .portfolio-details .portfolio-info ul li + li {
   margin-top: 10px;
@@ -864,6 +917,7 @@ section .container {
 .portfolio-details .portfolio-info p {
   font-size: 15px;
   padding: 15px 0 0 0;
+  line-height: 2;
 }
 @media (max-width: 992px) {
   .portfolio-details .portfolio-info {
